@@ -227,6 +227,7 @@ Audit history can be retrieved through:
 GET /tickets/{ticket_id}/audit-logs
 ```
 
+
 ## 12. Testing
 
 The project includes automated API tests using Pytest and FastAPI TestClient.
@@ -246,10 +247,12 @@ The automated test suite verifies:
 - Home endpoint returns HTTP 200 and the expected response message.
 - OpenAPI schema is accessible and contains the correct project title.
 - Swagger documentation endpoint is accessible.
+- PostgreSQL database connection endpoint returns a successful response.
 
-**Latest Test Result:** 3 tests passed successfully.
+**Latest Test Result:** 4 automated tests passed successfully.
 
 The API can also be explored manually through Swagger UI at `/docs`.
+
 
 ## 13. Future Improvements
 
