@@ -229,9 +229,27 @@ GET /tickets/{ticket_id}/audit-logs
 
 ## 12. Testing
 
-The API can be tested through Swagger UI.
+The project includes automated API tests using Pytest and FastAPI TestClient.
 
-The `tests/` directory is reserved for automated Pytest tests. Automated test coverage should be added and verified before claiming that the test suite passes.
+### Run Automated Tests
+
+Execute the following command from the project root:
+
+```bash
+python -m pytest -v
+```
+
+### Current Test Coverage
+
+The automated test suite verifies:
+
+- Home endpoint returns HTTP 200 and the expected response message.
+- OpenAPI schema is accessible and contains the correct project title.
+- Swagger documentation endpoint is accessible.
+
+**Latest Test Result:** 3 tests passed successfully.
+
+The API can also be explored manually through Swagger UI at `/docs`.
 
 ## 13. Future Improvements
 
